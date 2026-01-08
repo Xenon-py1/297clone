@@ -19,17 +19,17 @@ else:
     system("clear")
     print(chr(27) + "[2J")
 print(f"""{Fore.RED}
-██████    ██████    ███████
-      ██  ██    ██        ██
- █████    ██████        ██
-██              ██      ██  
-███████  ██████      ██  
+██████    ███████    ████████
+      ██  ██    ███        ███
+ █████    ███████        ███
+██              ███      ███  
+███████  ███████      ███  
 
-                   {Fore.CYAN}297 tool | by 901{Style.RESET_ALL}
+                   {Fore.CYAN}297 clone | by 901{Style.RESET_ALL}
         """)
-token = input(f'Please enter your token:\n >')
-guild_s = input('Please enter guild id you want to copy:\n >')
-guild = input('Please enter guild id where you want to copy:\n >')
+token = input(f'set your token*:\n ')
+guild_s = input('server id:\n ')
+guild = input('your server id:\n ')
 input_guild_id = guild_s  # <-- input guild id
 output_guild_id = guild  # <-- output guild id
 token = token  # <-- your Account token
@@ -53,11 +53,11 @@ async def on_ready():
     await Clone.channels_create(guild_to, guild_from)
     print(f"""{Fore.GREEN}
 
-██████    ██████    ███████
-      ██  ██    ██        ██
- █████    ██████        ██
-██              ██      ██  
-███████  ██████      ██  
+██████    ███████    ████████
+      ██  ██    ███        ███
+ █████    ███████        ███
+██              ███      ███  
+███████  ███████      ███  
     {Style.RESET_ALL}""")
     await asyncio.sleep(5)
     await client.close()
