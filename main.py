@@ -1,5 +1,5 @@
 from os import system
-mytitle = "RaNgE. Cloner - Developed by Kyoja"
+mytitle = "#. 297 - by901"
 system("title "+mytitle)
 import psutil
 import time
